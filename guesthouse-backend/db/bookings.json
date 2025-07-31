@@ -1,0 +1,57 @@
+[
+  {
+    "fullName": "binit",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Double",
+    "checkIn": "2025-07-15",
+    "checkOut": "2025-07-26",
+    "paymentStatus": "Online",
+    "amount": 13200,
+    "createdAt": "2025-07-14T06:25:05.744Z"
+  },
+  {
+    "fullName": "binit",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Double",
+    "checkIn": "2025-07-15",
+    "checkOut": "2025-07-26",
+    "paymentStatus": "Online",
+    "amount": 13200,
+    "createdAt": "2025-07-14T06:37:26.607Z"
+  },
+  {
+    "fullName": "binit",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Double",
+    "checkIn": "2025-07-15",
+    "checkOut": "2025-07-26",
+    "paymentStatus": "Cash",
+    "amount": 13200,
+    "createdAt": "2025-07-14T06:43:06.983Z"
+  },
+  {
+    "fullName": "b1",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Single",
+    "checkIn": "2025-07-15",
+    "checkOut": "2025-07-16",
+    "paymentStatus": "Online",
+    "amount": 800,
+    "createdAt": "2025-07-14T06:51:34.102Z"
+  },
+  {
+    "fullName": "binit",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Double",
+    "checkIn": "2025-07-17",
+    "checkOut": "2025-07-19",
+    "paymentStatus": "Cash",
+    "amount": 2400,
+    "createdAt": "2025-07-14T06:51:50.278Z"
+  }
+]

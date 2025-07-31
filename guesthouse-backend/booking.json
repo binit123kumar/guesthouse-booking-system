@@ -1,0 +1,540 @@
+[
+  {
+    "fullName": "binit",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Single",
+    "checkIn": "2025-07-16",
+    "checkOut": "2025-07-17",
+    "paymentStatus": "Online",
+    "amount": 800,
+    "createdAt": "2025-07-14T07:03:43.573Z"
+  },
+  {
+    "fullName": "binit",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Double",
+    "checkIn": "2025-07-18",
+    "checkOut": "2025-07-26",
+    "paymentStatus": "Cash",
+    "amount": 9600,
+    "createdAt": "2025-07-14T07:04:07.680Z"
+  },
+  {
+    "fullName": "binit",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Single",
+    "checkIn": "2025-07-18",
+    "checkOut": "2025-07-26",
+    "paymentStatus": "Online",
+    "amount": 6400,
+    "createdAt": "2025-07-14T07:18:31.154Z"
+  },
+  {
+    "fullName": "sumit ",
+    "email": "binit491@gmail.com",
+    "phone": "09525594357",
+    "roomType": "Single",
+    "checkIn": "2025-07-26",
+    "checkOut": "2025-07-31",
+    "paymentStatus": "Cash",
+    "amount": 4000,
+    "createdAt": "2025-07-25T09:57:22.968Z"
+  },
+  {
+    "fullName": "sumit ",
+    "email": "binit491@gmail.com",
+    "phone": "09525594357",
+    "roomType": "Single",
+    "checkIn": "2025-07-30",
+    "checkOut": "2025-07-31",
+    "paymentStatus": "Cash",
+    "amount": 800,
+    "createdAt": "2025-07-28T06:46:46.585Z"
+  },
+  {
+    "fullName": "sumit ",
+    "email": "binit491@gmail.com",
+    "phone": "09525594357",
+    "roomType": "Double",
+    "checkIn": "2025-07-30",
+    "checkOut": "2025-07-31",
+    "paymentStatus": "Online",
+    "amount": 1200,
+    "createdAt": "2025-07-28T06:47:00.709Z"
+  },
+  {
+    "fullName": "bini",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Single",
+    "checkIn": "2025-07-29",
+    "checkOut": "2025-07-31",
+    "paymentStatus": "Online",
+    "amount": 1600,
+    "createdAt": "2025-07-28T07:00:20.282Z"
+  },
+  {
+    "fullName": "sumit500",
+    "email": "binit491@gmail.com",
+    "phone": "09525594357",
+    "roomType": "Suite",
+    "checkIn": "2025-07-31",
+    "checkOut": "2025-08-03",
+    "paymentStatus": "Online",
+    "amount": 5400,
+    "createdAt": "2025-07-28T07:27:38.914Z"
+  },
+  {
+    "fullName": "binit",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Double",
+    "checkIn": "2025-07-30",
+    "checkOut": "2025-07-31",
+    "paymentStatus": "Online",
+    "amount": 1200,
+    "createdAt": "2025-07-28T07:30:40.149Z"
+  },
+  {
+    "fullName": "sumit500",
+    "email": "binit491@gmail.com",
+    "phone": "09525594357",
+    "roomType": "Double",
+    "checkIn": "2025-07-30",
+    "checkOut": "2025-07-31",
+    "paymentStatus": "Online",
+    "amount": 1200,
+    "createdAt": "2025-07-28T08:04:31.819Z"
+  },
+  {
+    "fullName": "b1",
+    "email": "binit491@gmail.com",
+    "phone": "09525594357",
+    "roomType": "Suite",
+    "checkIn": "2025-07-30",
+    "checkOut": "2025-07-31",
+    "paymentStatus": "Cash",
+    "amount": 1800,
+    "createdAt": "2025-07-28T08:04:54.594Z"
+  },
+  {
+    "fullName": "sumit500",
+    "email": "binit491@gmail.com",
+    "phone": "09525594357",
+    "roomType": "Double",
+    "checkIn": "2025-07-30",
+    "checkOut": "2025-07-31",
+    "paymentStatus": "Online",
+    "amount": 1200,
+    "createdAt": "2025-07-28T08:08:09.317Z"
+  },
+  {
+    "fullName": "sumit500",
+    "email": "binit491@gmail.com",
+    "phone": "09525594357",
+    "roomType": "Double",
+    "checkIn": "2025-07-30",
+    "checkOut": "2025-07-31",
+    "paymentStatus": "Online",
+    "amount": 1200,
+    "createdAt": "2025-07-28T08:13:11.064Z"
+  },
+  {
+    "fullName": "sumit500",
+    "email": "binit491@gmail.com",
+    "phone": "09525594357",
+    "roomType": "Double",
+    "checkIn": "2025-07-30",
+    "checkOut": "2025-07-31",
+    "paymentStatus": "Cash",
+    "amount": 1200,
+    "createdAt": "2025-07-30T07:09:18.058Z"
+  },
+  {
+    "fullName": "binit kumar",
+    "email": "binit491@gmail.com",
+    "phone": "87589632145",
+    "roomType": "Single",
+    "checkIn": "2025-07-31",
+    "checkOut": "2025-08-01",
+    "paymentStatus": "Online",
+    "amount": 800,
+    "createdAt": "2025-07-31T02:01:19.315Z"
+  },
+  {
+    "fullName": "ba",
+    "email": "binit491@gmail.com",
+    "phone": "9636963696",
+    "roomType": "Double",
+    "checkIn": "2025-07-31",
+    "checkOut": "2025-08-01",
+    "paymentStatus": "Online",
+    "amount": 1200,
+    "createdAt": "2025-07-31T02:16:32.132Z"
+  },
+  {
+    "fullName": "binit kumar",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Single",
+    "checkIn": "2025-07-31",
+    "checkOut": "2025-08-01",
+    "paymentStatus": "Online",
+    "amount": 800,
+    "createdAt": "2025-07-31T02:22:43.806Z"
+  },
+  {
+    "fullName": "sumit bhai",
+    "email": "binit491@gmail.com",
+    "phone": "09525594357",
+    "roomType": "Single",
+    "checkIn": "2025-07-31",
+    "checkOut": "2025-08-01",
+    "paymentStatus": "Online",
+    "amount": 800,
+    "createdAt": "2025-07-31T05:52:22.907Z"
+  },
+  {
+    "fullName": "binit",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Single",
+    "checkIn": "2025-08-01",
+    "checkOut": "2025-08-02",
+    "paymentStatus": "Online",
+    "guests": [
+      {
+        "name": "sumit",
+        "age": "25"
+      },
+      {
+        "name": "rahul",
+        "age": "28"
+      }
+    ],
+    "amount": 800,
+    "createdAt": "2025-07-31T06:08:58.540Z"
+  },
+  {
+    "fullName": "binit",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Double",
+    "checkIn": "2025-09-01",
+    "checkOut": "2025-09-02",
+    "paymentStatus": "Online",
+    "guests": [
+      {
+        "name": "rak",
+        "age": "58"
+      },
+      {
+        "name": "ramesh",
+        "age": "25"
+      }
+    ],
+    "amount": 1200,
+    "createdAt": "2025-07-31T06:14:43.269Z"
+  },
+  {
+    "fullName": "binit",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Single",
+    "checkIn": "2025-09-01",
+    "checkOut": "2025-09-02",
+    "paymentStatus": "Online",
+    "guests": [
+      {
+        "name": "rak",
+        "age": "58"
+      },
+      {
+        "name": "rahul",
+        "age": "28"
+      }
+    ],
+    "amount": 800,
+    "createdAt": "2025-07-31T06:18:24.429Z"
+  },
+  {
+    "fullName": "binit",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "roomType": "Single",
+    "checkIn": "2025-09-01",
+    "checkOut": "2025-09-02",
+    "paymentStatus": "Online",
+    "guests": [
+      {
+        "name": "rak",
+        "age": "58",
+        "email": "binit491@gmail.com",
+        "phone": "09525594357"
+      }
+    ],
+    "amount": 800,
+    "createdAt": "2025-07-31T06:22:34.477Z"
+  },
+  {
+    "fullName": "binit",
+    "address": "binit491@gmail.com",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "purpose": "meating",
+    "roomType": "Single",
+    "roomsRequired": "2",
+    "checkIn": "2025-08-01",
+    "checkOut": "2025-08-02",
+    "arrivalTime": "12:04",
+    "departureTime": "17:04",
+    "category": "Official",
+    "paymentStatus": "Online",
+    "guests": [
+      {
+        "name": "binit",
+        "age": "28",
+        "address": "",
+        "email": "binit491@gmail.com",
+        "phone": "09525594357",
+        "purpose": "with sir"
+      }
+    ],
+    "amount": 800,
+    "createdAt": "2025-07-31T06:35:24.075Z"
+  },
+  {
+    "fullName": "binit",
+    "address": "binit491@gmail.com",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "purpose": "meating",
+    "roomType": "Single",
+    "roomsRequired": "2",
+    "checkIn": "2025-08-01",
+    "checkOut": "2025-08-02",
+    "arrivalTime": "14:08",
+    "departureTime": "12:13",
+    "category": "Semi-Private",
+    "paymentStatus": "",
+    "guests": [
+      {
+        "name": "sumit bhai",
+        "age": "25",
+        "address": "patna",
+        "email": "binit491@gmail.com",
+        "phone": "09525594357",
+        "purpose": "with senior"
+      }
+    ],
+    "amount": 800,
+    "createdAt": "2025-07-31T06:38:44.935Z"
+  },
+  {
+    "fullName": "binit",
+    "address": "binit491@gmail.com",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "purpose": "with sir",
+    "roomType": "Single",
+    "roomsRequired": "2",
+    "checkIn": "2025-08-01T14:26",
+    "checkOut": "2025-08-02T15:27",
+    "category": "Private",
+    "paymentStatus": "Online",
+    "guests": [
+      {
+        "name": "sumit",
+        "age": "50",
+        "address": "binit491@gmail.com",
+        "email": "binit491@gmail.com",
+        "phone": "09525594357",
+        "purpose": "25"
+      }
+    ],
+    "amount": 1600,
+    "createdAt": "2025-07-31T06:55:17.857Z"
+  },
+  {
+    "fullName": "binit",
+    "address": "binit491@gmail.com",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "purpose": "with sir",
+    "roomType": "Single",
+    "roomsRequired": "2",
+    "checkIn": "2025-08-02T12:44",
+    "checkOut": "2025-08-03T14:46",
+    "category": "",
+    "paymentStatus": "Online",
+    "guests": [],
+    "amount": 1600,
+    "createdAt": "2025-07-31T07:15:01.541Z"
+  },
+  {
+    "fullName": "binit",
+    "address": "binit491@gmail.com",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "purpose": "with sir",
+    "roomType": "Single",
+    "roomsRequired": "2",
+    "checkIn": "2025-08-01T12:00",
+    "checkOut": "2025-07-02T11:00",
+    "category": "Official",
+    "paymentStatus": "Online",
+    "guests": [
+      {
+        "name": "sumit bhai",
+        "age": "",
+        "address": "patna",
+        "email": "binit491@gmail.com",
+        "phone": "09525594357",
+        "purpose": "fgblkdxft"
+      }
+    ],
+    "amount": -24000,
+    "createdAt": "2025-07-31T07:29:53.769Z"
+  },
+  {
+    "fullName": "binit",
+    "address": "binit491@gmail.com",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "purpose": "with sir",
+    "roomType": "Single",
+    "roomsRequired": "2",
+    "checkIn": "2025-08-01T13:00",
+    "checkOut": "2025-08-02T13:00",
+    "category": "Official",
+    "paymentStatus": "Online",
+    "guests": [],
+    "amount": 800,
+    "createdAt": "2025-07-31T07:30:53.306Z"
+  },
+  {
+    "fullName": "binit",
+    "address": "binit491@gmail.com",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "purpose": "with sir",
+    "roomType": "Single",
+    "roomsRequired": "2",
+    "checkIn": "2025-08-12T13:12",
+    "checkOut": "2025-08-13T13:12",
+    "category": "Private",
+    "paymentStatus": "Online",
+    "guests": [],
+    "amount": 800,
+    "createdAt": "2025-07-31T07:42:57.641Z"
+  },
+  {
+    "fullName": "binit",
+    "address": "binit491@gmail.com",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "purpose": "with sir",
+    "roomType": "Double",
+    "roomsRequired": "2",
+    "checkIn": "2025-08-13T13:18",
+    "checkOut": "2025-08-14T13:18",
+    "category": "Semi-Private",
+    "paymentStatus": "Online",
+    "guests": [],
+    "amount": 1200,
+    "createdAt": "2025-07-31T07:48:35.764Z"
+  },
+  {
+    "fullName": "binit",
+    "address": "binit491@gmail.com",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "purpose": "with sir",
+    "roomType": "Single",
+    "roomsRequired": "1",
+    "checkInDate": "2025-08-31",
+    "checkInTime": "17:30",
+    "checkOutDate": "2025-08-25",
+    "checkOutTime": "18:31",
+    "category": "Official",
+    "paymentStatus": "Online",
+    "guests": [
+      {
+        "name": "sumit500",
+        "age": "25",
+        "address": "patna",
+        "email": "binit491@gmail.com",
+        "phone": "09525594357",
+        "purpose": "patna"
+      }
+    ],
+    "amount": null,
+    "createdAt": "2025-07-31T08:01:38.338Z"
+  },
+  {
+    "fullName": "binit",
+    "address": "binit491@gmail.com",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "purpose": "with sir",
+    "roomType": "Double",
+    "roomsRequired": "1",
+    "checkInDate": "2025-08-01",
+    "checkInTime": "15:34",
+    "checkOutDate": "2025-08-02",
+    "checkOutTime": "15:34",
+    "category": "Official",
+    "paymentStatus": "Online",
+    "guests": [],
+    "amount": null,
+    "createdAt": "2025-07-31T08:05:19.906Z"
+  },
+  {
+    "fullName": "binit",
+    "address": "binit491@gmail.com",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "purpose": "with sir",
+    "roomType": "Double",
+    "roomsRequired": "1",
+    "checkInDate": "2025-08-01",
+    "checkInTime": "15:38",
+    "checkOutDate": "2025-08-02",
+    "checkOutTime": "15:39",
+    "category": "Semi-Private",
+    "paymentStatus": "Online",
+    "guests": [],
+    "amount": null,
+    "createdAt": "2025-07-31T08:07:07.639Z"
+  },
+  {
+    "fullName": "binit",
+    "address": "binit491@gmail.com",
+    "email": "binit491@gmail.com",
+    "phone": "9525594357",
+    "purpose": "nm",
+    "roomType": "Single",
+    "roomsRequired": "2",
+    "checkInDate": "2025-08-01",
+    "checkInTime": "15:47",
+    "checkOutDate": "2025-08-02",
+    "checkOutTime": "15:47",
+    "category": "Official",
+    "paymentStatus": "Online",
+    "guests": [
+      {
+        "name": "b1",
+        "age": "25",
+        "address": "patna",
+        "email": "binit491@gmail.com",
+        "phone": "09525594357",
+        "purpose": "sam"
+      }
+    ],
+    "amount": 1600,
+    "createdAt": "2025-07-31T08:16:11.191Z"
+  }
+]

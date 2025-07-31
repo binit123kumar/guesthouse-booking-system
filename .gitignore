@@ -1,0 +1,6 @@
+node_modules/
+guesthouse-frontend/node_modules/
+guesthouse-backend/node_modules/
+*.zip
+build/
+.env
