@@ -4,11 +4,21 @@ const AdminBookings = () => {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/bookings")
-      .then((res) => res.json())
-      .then((data) => setBookings(data))
-      .catch((err) => console.error("Error fetching bookings:", err));
+    const fetchData = () => {
+      fetch("http://localhost:5000/api/bookings")
+        .then((res) => res.json())
+        .then((data) => setBookings(data))
+        .catch((err) => console.error("Error fetching bookings:", err));
+    };
+
+    fetchData(); // पहला call
+    const interval = setInterval(fetchData, 30000); // हर 30 सेकंड पर refresh
+    return () => clearInterval(interval);
   }, []);
+
+  const downloadInvoice = (index) => {
+    window.open(`http://localhost:5000/api/bookings/${index}/invoice`, "_blank");
+  };
 
   return (
     <div style={styles.container}>
@@ -23,22 +33,35 @@ const AdminBookings = () => {
             <th style={styles.th}>Check-In</th>
             <th style={styles.th}>Check-Out</th>
             <th style={styles.th}>Payment</th>
+            <th style={styles.th}>Amount</th>
+            <th style={styles.th}>Invoice</th>
           </tr>
         </thead>
         <tbody>
-          {bookings.map((b, i) => (
-            <tr key={i}>
-              <td style={styles.td}>{i + 1}</td>
-              <td style={styles.td}>{b.fullName}</td>
-              <td style={styles.td}>{b.roomType}</td>
-              <td style={styles.td}>{b.checkIn}</td>
-              <td style={styles.td}>{b.checkOut}</td>
-              <td style={styles.td}>{b.paymentStatus}</td>
-            </tr>
-          ))}
+          {bookings.map((b, i) => {
+            const checkIn = b.checkIn || b.checkInDate || "-";
+            const checkOut = b.checkOut || b.checkOutDate || "-";
+
+            return (
+              <tr key={i}>
+                <td style={styles.td}>{i + 1}</td>
+                <td style={styles.td}>{b.fullName}</td>
+                <td style={styles.td}>{b.roomType}</td>
+                <td style={styles.td}>{checkIn}</td>
+                <td style={styles.td}>{checkOut}</td>
+                <td style={styles.td}>{b.paymentStatus || "-"}</td>
+                <td style={styles.td}>₹ {b.amount || 0}</td>
+                <td style={styles.td}>
+                  <button style={styles.invoiceBtn} onClick={() => downloadInvoice(i)}>
+                    Download
+                  </button>
+                </td>
+              </tr>
+            );
+          })}
           {bookings.length === 0 && (
             <tr>
-              <td style={styles.td} colSpan="6">No bookings found.</td>
+              <td style={styles.td} colSpan="8">No bookings found.</td>
             </tr>
           )}
         </tbody>
@@ -80,6 +103,14 @@ const styles = {
     borderBottom: "1px solid #ccc",
     fontSize: "16px",
     color: "#333",
+  },
+  invoiceBtn: {
+    padding: "6px 12px",
+    backgroundColor: "#28a745",
+    border: "none",
+    borderRadius: "6px",
+    color: "#fff",
+    cursor: "pointer",
   },
 };
 

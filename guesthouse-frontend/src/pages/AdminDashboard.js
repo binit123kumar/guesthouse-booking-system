@@ -11,10 +11,16 @@ const AdminDashboard = () => {
   });
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/admin/dashboard")
-      .then((res) => res.json())
-      .then((data) => setStats(data))
-      .catch((err) => console.error("Dashboard fetch error:", err));
+    const fetchData = () => {
+      fetch("http://localhost:5000/api/admin/dashboard")
+        .then((res) => res.json())
+        .then((data) => setStats(data))
+        .catch((err) => console.error("Dashboard fetch error:", err));
+    };
+
+    fetchData(); // first call
+    const interval = setInterval(fetchData, 30000); // हर 30 सेकंड पर refresh
+    return () => clearInterval(interval); // cleanup
   }, []);
 
   const handleLogout = () => {

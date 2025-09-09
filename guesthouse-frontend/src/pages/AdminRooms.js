@@ -6,32 +6,37 @@ const AdminRooms = () => {
   const [availableRooms, setAvailableRooms] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/bookings")
-      .then((res) => res.json())
-      .then((data) => {
-        const bookedCount = data.length;
-        const remaining = TOTAL_ROOMS - bookedCount;
+    const fetchData = () => {
+      fetch("http://localhost:5000/api/bookings")
+        .then((res) => res.json())
+        .then((data) => {
+          const today = new Date();
+          // ✅ सिर्फ़ active bookings गिनना
+          const activeBookings = data.filter((b) => new Date(b.checkOut || b.checkOutDate) >= today);
+          const bookedCount = activeBookings.reduce((sum, b) => sum + (parseInt(b.roomsRequired) || 1), 0);
+          const remaining = TOTAL_ROOMS - bookedCount;
 
-        const roomList = [];
+          const roomList = [];
+          for (let i = 1; i <= remaining; i++) {
+            roomList.push({
+              id: 200 + i,
+              type: i % 3 === 0 ? "Suite" : i % 2 === 0 ? "Double" : "Single",
+              status: "Available",
+            });
+          }
+          setAvailableRooms(roomList);
+        })
+        .catch((err) => console.error("Error fetching bookings:", err));
+    };
 
-        for (let i = 1; i <= remaining; i++) {
-          roomList.push({
-            id: 200 + i,
-            type: i % 3 === 0 ? "Suite" : i % 2 === 0 ? "Double" : "Single",
-            status: "Available",
-          });
-        }
-
-        setAvailableRooms(roomList);
-      })
-      .catch((err) => console.error("Error fetching bookings:", err));
+    fetchData(); // first call
+    const interval = setInterval(fetchData, 30000); // हर 30 सेकंड पर refresh
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.title}>
-        🛏 Available Rooms ({availableRooms.length} / {TOTAL_ROOMS})
-      </h2>
+      <h2 style={styles.title}>🛏 Available Rooms ({availableRooms.length} / {TOTAL_ROOMS})</h2>
 
       <table style={styles.table}>
         <thead>
@@ -51,9 +56,7 @@ const AdminRooms = () => {
           ))}
           {availableRooms.length === 0 && (
             <tr>
-              <td style={styles.td} colSpan="3">
-                No rooms available.
-              </td>
+              <td style={styles.td} colSpan="3">No rooms available.</td>
             </tr>
           )}
         </tbody>
