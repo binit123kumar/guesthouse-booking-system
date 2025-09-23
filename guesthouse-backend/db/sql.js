@@ -1,7 +1,7 @@
 const config = {
-  user: 'your_sql_username',          // <-- अपना username डालें
-  password: 'your_sql_password',      // <-- अपना password डालें
-  server: 'localhost',                // या 'DESKTOP-XXXX\\SQLEXPRESS'
+  user: 'your_sql_username',          // <-- Enter your username
+  password: 'your_sql_password',      // <-- Enter your password
+  server: 'localhost',                // or 'DESKTOP-XXXX\\SQLEXPRESS'
   database: 'GuestHouseDB',
   options: {
     encrypt: false,

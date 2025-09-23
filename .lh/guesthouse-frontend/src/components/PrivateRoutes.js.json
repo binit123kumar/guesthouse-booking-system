@@ -1,0 +1,18 @@
+{
+    "sourceFile": "guesthouse-frontend/src/components/PrivateRoutes.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1758551637851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1758551637851,
+            "name": "Commit-0",
+            "content": "// src/components/PrivateRoutes.js\r\n\r\nimport React from \"react\";\r\nimport { Navigate, Outlet } from \"react-router-dom\";\r\nimport { isAuthenticated } from \"../utils/auth\";\r\n\r\nconst PrivateRoutes = () => {\r\n  return isAuthenticated() ? <Outlet /> : <Navigate to=\"/admin/login\" />;\r\n};\r\n\r\nexport default PrivateRoutes;"
+        }
+    ]
+}
