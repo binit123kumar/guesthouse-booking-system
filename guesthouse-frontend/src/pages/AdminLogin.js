@@ -1,36 +1,58 @@
-// src/pages/AdminLogin.js (Updated)
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { login } from "../utils/auth"; 
+
+// Local login storage
+const localLogin = (token) => {
+  localStorage.setItem("adminToken", token);
+};
 
 const AdminLogin = () => {
-  const [email, setEmail] = useState("");
+  const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  // FIXED → Admin लिखने पर सही email भेजेगा
+  const getFullEmail = (inputID) => {
+    if (inputID.toLowerCase() === "admin") {
+      return "binit491@gmail.com"; // ← अपना असली Admin Email यहाँ डालें
+    }
+    return inputID;
+  };
+
+  // Login Function
+  const handleLogin = async (e) => {
     e.preventDefault();
 
-    if (!email || !password) {
+    if (!id || !password) {
       setError("Please fill in all fields.");
       return;
     }
 
-    const storedUser = JSON.parse(localStorage.getItem("adminUser"));
+    setError("");
+    const finalEmail = getFullEmail(id);
+    const finalPassword = password;
 
-    if (
-      (email.toLowerCase() === "admin@aku.ac.in" && password === "admin123") ||
-      (storedUser &&
-        email.toLowerCase() === storedUser.email.toLowerCase() &&
-        password === storedUser.password) ||
-      (email === "Admin" && password === "admin123")
-    ) {
-      setError("");
-      login(); // ✅ Log the user in
-      navigate("/admin/dashboard");
-    } else {
-      setError("Invalid credentials");
+    try {
+      const response = await fetch("http://localhost:5000/api/admin/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: finalEmail, password: finalPassword }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        localLogin(data.token);
+        navigate("/admin/dashboard");
+      } else {
+        setError(data.message || "Invalid credentials.");
+      }
+    } catch (err) {
+      console.error("Login Error:", err);
+      setError("Network error. Please ensure the backend server is running.");
     }
   };
 
@@ -40,13 +62,16 @@ const AdminLogin = () => {
       <h2>Admin Login</h2>
 
       <form onSubmit={handleLogin} style={styles.form}>
+        {/* USERNAME */}
         <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          type="text"
+          placeholder="Username/ID (Type 'Admin')"
+          value={id}
+          onChange={(e) => setId(e.target.value)}
           style={styles.input}
         />
+
+        {/* FIXED PASSWORD INPUT */}
         <input
           type="password"
           placeholder="Password"
@@ -57,7 +82,9 @@ const AdminLogin = () => {
 
         {error && <p style={styles.error}>{error}</p>}
 
-        <button type="submit" style={styles.button}>Login</button>
+        <button type="submit" style={styles.button}>
+          Login
+        </button>
       </form>
 
       <p style={styles.registerText}>
@@ -70,6 +97,7 @@ const AdminLogin = () => {
   );
 };
 
+// CSS Styles
 const styles = {
   container: {
     maxWidth: "400px",

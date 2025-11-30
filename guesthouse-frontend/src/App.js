@@ -1,10 +1,13 @@
-// src/App.js (Updated)
+// File: guesthouse-frontend/src/App.js (Updated)
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import HomeButton from './components/HomeButton';
-import PrivateRoutes from './components/PrivateRoutes'; // New Import
+
+// ✅ नया इंपोर्ट: ProtectedRoutes कंपोनेंट
+import ProtectedRoutes from './ProtectedRoutes'; 
 
 import Home from './pages/Home';
 import Register from './pages/Register';
@@ -29,6 +32,7 @@ function App() {
       <Header />
       <Navbar />
       <Routes>
+        {/* Public Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/booking" element={<Booking />} />
@@ -37,12 +41,12 @@ function App() {
         <Route path="/facilities" element={<Facilities />} />
         <Route path="/success" element={<Success />} />
 
-        {/* ✅ Public Admin Route for Login */}
+        {/* Public Admin Route for Login */}
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="/admin/login" element={<AdminLogin />} />
 
-        {/* ✅ Protected Admin Routes */}
-        <Route element={<PrivateRoutes />}>
+        {/* 🔒 Protected Admin Routes: अब ये रूट्स बिना लॉगिन टोकन के नहीं खुलेंगे */}
+        <Route element={<ProtectedRoutes />}>
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/bookings" element={<AdminBookings />} />
           <Route path="/admin/pending-bookings" element={<AdminPendingBookings />} />
